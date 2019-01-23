@@ -33,7 +33,9 @@ func FDirExt(dir, ext string) ([]FileInfo, error) {
 	//alternative :
 	//  "path/filepath"
 	//  files, _ := filepath.Glob("*.txt") - return string[]
-
+        //alternative :       
+        //path/filepath
+        //ext = filepath.Ext(filename)
 	all, err := FDir(dir)
 	if err != nil {
 		return nil, err
